@@ -15,8 +15,7 @@ const Post = () => {
     }
 
     useEffect(() => {    
-        fetchPost();
-            // eslint-disable-next-line react-hooks/exhaustive-deps          
+        fetchPost();          
     }, [query]);
 
     return (

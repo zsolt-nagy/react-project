@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import "./blogPost.css";
 
 
@@ -11,7 +11,7 @@ const BlogPost = ({ description, date, image, title, full }) => {
                 <span>{date}</span>
             </div>
             <div className="image">
-                <img className="blog-image" src={image} alt={image}/>
+                <img className="blog-image" src={image} alt="news API image"/>
             </div>
             <article className="content">{description}</article>
             <a href={`${full}`} target="_blank">Olvass Tovább!</a>

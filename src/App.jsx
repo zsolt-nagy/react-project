@@ -18,7 +18,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} /> 
           <Route path="/kapcsolat" component={Kapcsolat} /> 
-          <Route path="/rólam" component={Rolam} /> 
+          <Route path="/about" component={Rolam} /> 
           <Route path="/post"  component={Post} />
         </Switch>       
       </div>
