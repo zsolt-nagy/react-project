@@ -1,0 +1,24 @@
+.contact-container {
+    width: 100vw;
+    height: auto;
+    padding: 8rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #DCD9D4;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.50) 0%, rgba(0, 0, 0, 0.50) 100%), radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.10) 0%, rgba(0, 0, 0, 0.50) 50%);
+    background-blend-mode: soft-light, screen;
+}
+
+.ikon {
+    max-width: 8rem;
+    height: auto;
+    margin-top: 3rem;
+    box-shadow: 6px 6px 3px grey;
+    border-radius: 50%;
+}
+
+.ikon:hover {
+    box-shadow: -6px -6px 3px rgb(85, 80, 80);
+}

@@ -1,0 +1,35 @@
+.home-container {
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
+}
+
+.home-img {
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    max-width: 100vw;
+    padding: 3rem;
+}
+
+.block-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.main-title {
+    position: absolute;
+    font-size: 2rem;
+    top: auto auto;
+    color: rgb(247, 245, 245);
+    text-shadow: 5px 1px 0 #243949;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}

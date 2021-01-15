@@ -1,0 +1,31 @@
+.logo {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.logo h2 {
+    font-family: 'Dancing Script', cursive;
+    text-decoration: none;
+    font-size: 4rem;
+    color: midnightblue;
+    text-shadow: 8px 2px 0 lightgrey;
+}
+
+.logo h2:hover {
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 992px) {
+    .logo {
+        padding: 5rem;
+    }
+    .logo h2 {
+        font-size: 4.5rem;
+    }
+}

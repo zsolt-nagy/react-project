@@ -1,0 +1,25 @@
+.form-containt {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-form {
+    min-width: 20%;
+    padding: .5rem 0;
+    text-align: center;
+}
+
+.btn-primary {
+    min-width: 10%;
+    margin: 1rem 0;
+    background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+    box-shadow: 3px 3px 3px grey;
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    box-shadow: -3px -3px 3px grey;
+}
