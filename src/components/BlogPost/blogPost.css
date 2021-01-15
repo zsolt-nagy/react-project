@@ -8,13 +8,12 @@
 
 .blogHeader {
     text-align: center;
-    padding: 1rem 0;
 }
 
 .blogHeader h1 {
     letter-spacing: .5px;
     text-transform: capitalize;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 .date {
