@@ -10,7 +10,7 @@ const Post = () => {
 
 
     const fetchPost = async () => {   
-            const response = await fetch(`https://newsapi.org/v2/top-headlines?category=${query}&country=hu&apiKey=a2bbeb28b32041398f965db3d1cdb8d7`)
+            const response = await fetch(`/v2/top-headlines?category=${query}&country=hu&apiKey=a2bbeb28b32041398f965db3d1cdb8d7`)
             const data = await response.json();
             setPost(data.articles);
     }
