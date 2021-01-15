@@ -16,9 +16,9 @@ function App() {
         <Nav />
         <Logo />
         <Switch>
-          <Route path="/" exact component={Home} /> 
+          <Route exact path="/"  component={Home} />  
           <Route path="/kapcsolat" component={Kapcsolat} /> 
-          <Route path="/about" component={Rolam} /> 
+          <Route path="/rolam" component={Rolam} /> 
           <Route path="/post"  component={Post} />
         </Switch>       
       </div>

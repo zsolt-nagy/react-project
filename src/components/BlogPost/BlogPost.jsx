@@ -11,10 +11,10 @@ const BlogPost = ({ description, date, image, title, full }) => {
                 <span>{date}</span>
             </div>
             <div className="image">
-                <img className="blog-image" src={image} alt="news API image"/>
+                <img className="blog-image" src={image} alt="news API jpg"/>
             </div>
             <article className="content">{description}</article>
-            <a href={`${full}`} target="_blank">Olvass Tovább!</a>
+            <a href={`${full}`} target="_blank" rel="noreferrer noopener">Olvass Tovább!</a>
         </section>
     )
 }
