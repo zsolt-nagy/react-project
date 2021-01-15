@@ -6,7 +6,7 @@ import "./post.css";
 const Post = () => {
     const [post, setPost] = useState([]); 
     const [query, setQuery] = useState("Business");
-    const proxyUrl = "https://cors-anywhere.herokuapp.com/"
+    const proxyUrl = require("http-proxy-middleware");
 
 
     const fetchPost = async () => {   
