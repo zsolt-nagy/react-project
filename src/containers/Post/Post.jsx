@@ -2,22 +2,24 @@ import React, {useState, useEffect} from 'react';
 import BlogPost from '../../components/BlogPost/BlogPost';
 import FormComponent from '../../components/Form/FormComponent';
 import "./post.css";
+import axios from "axios";
 
 const Post = () => {
     const [post, setPost] = useState([]); 
-    const [query, setQuery] = useState("Business");
-    
+    const [query, setQuery] = useState("Business");  
 
-
-    const fetchPost = async () => {   
+    /* const fetchPost = async () => {   
             const response = await fetch(`/v2/top-headlines?category=${query}&country=hu&apiKey=a2bbeb28b32041398f965db3d1cdb8d7`)
             const data = await response.json();
             setPost(data.articles);
     }
-
-    useEffect(() => {    
-        fetchPost(); 
-        const reqOptions = { 'mode': 'cors', headers: { 'Access-Control-Allow-Origin': '*' } };
+ */
+    useEffect(() => {  
+        axios.get(`/v2/top-headlines?category=${query}&country=hu&apiKey=a2bbeb28b32041398f965db3d1cdb8d7`)
+        .then(response => {
+            const post = response.data.articles;
+            setPost(post);
+        })  
         // eslint-disable-next-line react-hooks/exhaustive-deps           
     }, [query]);
 

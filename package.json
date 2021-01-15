@@ -1,5 +1,6 @@
 {
     "name": "react-project",
+    "proxy": "https://newsapi.org",
     "homepage": "https://L0la.github.io/react-project",
     "version": "0.1.0",
     "private": true,
@@ -7,6 +8,7 @@
         "@testing-library/jest-dom": "^5.11.9",
         "@testing-library/react": "^11.2.3",
         "@testing-library/user-event": "^12.6.0",
+        "axios": "^0.21.1",
         "bootstrap": "^4.5.3",
         "newsapi": "^2.4.1",
         "react": "^17.0.1",
@@ -15,7 +17,6 @@
         "react-scripts": "4.0.1",
         "web-vitals": "^0.2.4"
     },
-    "proxy": "https://newsapi.org",
     "scripts": {
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
