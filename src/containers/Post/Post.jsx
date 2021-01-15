@@ -6,7 +6,7 @@ import "./post.css";
 const Post = () => {
     const [post, setPost] = useState([]); 
     const [query, setQuery] = useState("Business");
-    // const proxyUrl = require("http-proxy-middleware");
+    
 
 
     const fetchPost = async () => {   
@@ -17,6 +17,7 @@ const Post = () => {
 
     useEffect(() => {    
         fetchPost(); 
+        const reqOptions = { 'mode': 'cors', headers: { 'Access-Control-Allow-Origin': '*' } };
         // eslint-disable-next-line react-hooks/exhaustive-deps           
     }, [query]);
 
