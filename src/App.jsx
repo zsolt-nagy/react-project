@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {BrowserRouter, Switch, Redirect, Route} from "react-router-dom";
 import "./App.css"
 import Nav from "./components/Nav/Nav";
 import Logo from "./components/Logo/Logo";
@@ -11,18 +11,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <Router>
       <div className="App">
-        <Nav />
-        <Logo />
-        <Switch>
-          <Route exact path="/"  component={Home} />  
-          <Route path="/kapcsolat" component={Kapcsolat} /> 
-          <Route path="/rolam" component={Rolam} /> 
-          <Route path="/post"  component={Post} />
-        </Switch>       
+        <BrowserRouter>
+          <Nav />
+          <Logo />
+          <Switch>
+            <Route exact path="/"  component={Home} />  
+            <Route path="/kapcsolat" component={Kapcsolat} /> 
+            <Route path="/rolam" component={Rolam} /> 
+            <Route path="/post"  component={Post} />
+            <Redirect to={"/"} />
+          </Switch> 
+        </BrowserRouter>      
       </div>
-    </Router>
   );
 }
 

@@ -1,21 +1,20 @@
 import React from 'react';
 import "./form.css";
 
-const FormComponent = ({text}) => {
+const FormComponent = ({ search, setQuery, setSearch}) => {
+
+    const updateSearch = e => {
+        setSearch(e.target.value);
+      };
+    
+      const getSearch = e => {
+        e.preventDefault();
+        setQuery(search);
+        setSearch("");
+      }
     return (
-        <form className="form-containt" onSubmit={(event) => {
-            event.preventDefault();
-            text(event.target.elements.contentType.value);
-        }}>
-            <select name="contentType" className="select-form">
-                <option value="business">Business</option>
-                <option value="entertainment">Entertainment</option>
-                <option value="general">general</option>
-                <option value="health">health</option>
-                <option value="science">science</option>
-                <option value="sports">sports</option>
-                <option value="technology">technology</option>
-            </select>
+        <form className="form-containt" onSubmit={getSearch}>
+            <input className="search-bar" type="text" value={search} onChange={updateSearch}/>
             <button className="btn btn-primary" type="submit">Kiválaszt</button>
         </form>
     )

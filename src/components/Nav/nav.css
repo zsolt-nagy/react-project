@@ -6,19 +6,33 @@
     background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 
-a.nav-link:nth-child(1) {
+.navLink:nth-child(1) {
     padding-left: 0;
+    color: #c4bfbf;
 }
 
-a.nav-link {
+.navLink,
+.navLink:after,
+.navLink:before {
     color: #c4bfbf;
     text-decoration: none;
     font-size: 1.5rem;
+    transition: all .5s;
 }
 
-a.nav-link:hover {
-    color: white;
-    text-shadow: 4px 4px 1px rgb(14, 20, 14);
+.navLink:hover {
+    color: #fdeded;
+    text-shadow: 4px 4px 1px #0c0c0c;
+    text-decoration: none;
+}
+
+.nav-link {
+    font-family: "Mulish", serif;
+}
+
+.nav-link:hover {
+    border-bottom: 1px solid #fdeded;
+    transition: all 1s;
 }
 
 .nav-item {
@@ -32,7 +46,7 @@ a.nav-link:hover {
 }
 
 @media only screen and (min-width: 992px) {
-    a.nav-link {
+    .nav-link {
         font-size: 1.2rem;
     }
 }

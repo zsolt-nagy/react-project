@@ -1,10 +1,15 @@
-.blogContainer,
-.postContainer {
+.blogContainer {
+    width: 100vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    font-family: "Oswald", sans-serif;
-    background-color: rgb(219, 216, 216);
+    align-items: baseline;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    padding: 2rem 1rem;
+}
+
+.postContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
