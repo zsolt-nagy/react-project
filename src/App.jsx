@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter, Switch, Redirect, Route} from "react-router-dom";
+import {HashRouter, Switch, Redirect, Route} from "react-router-dom";
 import "./App.css"
 import Nav from "./components/Nav/Nav";
 import Logo from "./components/Logo/Logo";
@@ -12,7 +12,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
       <div className="App">
-        <BrowserRouter>
+        <HashRouter>
           <Nav />
           <Logo />
           <Switch>
@@ -22,7 +22,7 @@ function App() {
             <Route path="/post"  component={Post} />
             <Redirect to={"/"} />
           </Switch> 
-        </BrowserRouter>      
+        </HashRouter>      
       </div>
   );
 }
