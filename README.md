@@ -8,4 +8,4 @@ Ebben a projektben készítettem egy weboldalt, ami csak egy alap, beépített A
      Fetch
 
 
-https://l0la.github.io/react-project
+https://torok-gabi.github.io/react-project
